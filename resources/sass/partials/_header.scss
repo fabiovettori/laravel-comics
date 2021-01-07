@@ -1,3 +1,94 @@
 header {
-    
+    #top-banner {
+        font-family: 'Open Sans', sans-serif;
+        padding: 3px 0;
+        background-color: $top_banner_bg_color;
+
+        a {
+            @include flex(row, center, center);
+            font-size: 11px;
+            color: $top_banner_font_color;
+            font-weight: 600;
+
+            &:last-of-type {
+                margin-left: 50px;
+            }
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            span {
+                @include flex(row, center, center);
+            }
+
+            .marker {
+                font-size: 10px;
+                align-self: flex-start;
+            }
+        }
+    }
+
+    nav {
+        font-family: 'Open Sans Condensed', sans-serif;
+        border-bottom: 1px solid #ebebeb;
+
+        img {
+            max-width: 85px;
+            align-self: center;
+        }
+
+        li {
+            @include flex(row, center, center);
+            padding: 35px 0;
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                display: block;
+                height: 0;
+                width: 100%;
+                background-color: $nav_links_hover_color;
+                bottom: 0;
+                left: 0;
+                transition: all .3s ease;
+            }
+
+            &:hover:after {
+                height: 5px;
+            }
+        }
+
+        a {
+            display: block;
+            color: $nav_links_font-color;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 10px 0;
+
+            &:hover {
+                color: $nav_links_hover_color;
+                text-decoration: none;
+            }
+        }
+
+        input {
+            border: none;
+            border-bottom: 2px solid $nav_links_hover_color;
+            align-self: center;
+            background-image: url('../images/finder.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+
+            &::placeholder {
+                font-size: 16px;
+                font-weight: 700;
+                text-transform: capitalize;
+                color: $nav_links_font-color;
+            }
+        }
+    }
 }
