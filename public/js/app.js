@@ -30219,7 +30219,35 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 $(document).ready(function () {
-  console.log('test');
+  var headerHeight = $('header').outerHeight();
+  $('header').css({
+    top: -headerHeight + 'px'
+  });
+  var topBannerHeigh = $('#top-banner').outerHeight();
+  var direction = 1;
+  var lastScrollTop = 0;
+  $(window).scroll(function () {
+    userScroll = $(this).scrollTop();
+
+    if (userScroll < lastScrollTop && userScroll > headerHeight) {
+      direction = -1;
+      $('header').css({
+        top: -topBannerHeigh + 'px'
+      });
+    } else if (userScroll < lastScrollTop) {
+      direction = -1;
+      $('header').css({
+        top: 0 + 'px'
+      });
+    } else {
+      direction = 1;
+      $('header').css({
+        top: -headerHeight + 'px'
+      });
+    }
+
+    lastScrollTop = userScroll <= 0 ? 0 : userScroll;
+  });
 });
 
 /***/ }),

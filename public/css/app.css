@@ -16106,6 +16106,14 @@ readers do not read off random characters that represent icons */
   box-sizing: border-box;
 }
 
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  left: 0;
+  z-index: 3;
+  transition: top 0.5s ease;
+}
 header #top-banner {
   font-family: "Open Sans", sans-serif;
   padding: 3px 0;
@@ -16137,6 +16145,7 @@ header #top-banner a .marker {
   align-self: flex-start;
 }
 header nav {
+  background-color: #fff;
   font-family: "Open Sans Condensed", sans-serif;
   border-bottom: 1px solid #ebebeb;
 }

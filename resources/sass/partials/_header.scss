@@ -1,4 +1,10 @@
 header {
+    position: sticky;
+    width: 100%;
+    left: 0;
+    z-index: 3;
+    transition: top .5s ease;
+
     #top-banner {
         font-family: 'Open Sans', sans-serif;
         padding: 3px 0;
@@ -30,6 +36,7 @@ header {
     }
 
     nav {
+        background-color: $nav_links_bg_color;
         font-family: 'Open Sans Condensed', sans-serif;
         border-bottom: 1px solid #ebebeb;
 

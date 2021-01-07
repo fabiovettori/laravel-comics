@@ -16,7 +16,7 @@
                                 <a href="#">movies</a>
                             </li>
                             <li>
-                                <a href="#">tv</a>
+                                <a href="#">TV</a>
                             </li>
                             <li>
                                 <a href="#">games</a>
@@ -50,7 +50,7 @@
                                 <a href="#">talent workshop</a>
                             </li>
                             <li>
-                                <a href="#">cpsc certificates</a>
+                                <a href="#">CPSC certificates</a>
                             </li>
                             <li>
                                 <a href="#">ratings</a>
@@ -66,29 +66,29 @@
                         <ul class="col-lg-4 list-unstyled">
                             <li class="text-uppercase">sites</li>
                             <li>
-                                <a href="#">dc</a>
+                                <a href="#">DC</a>
                             </li>
                             <li>
-                                <a href="#">mad magazine</a>
+                                <a href="#">MAD magazine</a>
                             </li>
                             <li>
-                                <a href="#">dc kids</a>
+                                <a href="#">DC kids</a>
                             </li>
                             <li>
-                                <a href="#">dc universe</a>
+                                <a href="#">DC universe</a>
                             </li>
                             <li>
-                                <a href="#">dc power visa</a>
+                                <a href="#">DC power visa</a>
                             </li>
                         </ul>
 
                         <ul class="col-lg-4 list-unstyled">
                             <li class="text-uppercase">shop</li>
                             <li>
-                                <a href="#">shop dc</a>
+                                <a href="#">shop DC</a>
                             </li>
                             <li>
-                                <a href="#">shop dc collectibles</a>
+                                <a href="#">shop DC collectibles</a>
                             </li>
                         </ul>
 
