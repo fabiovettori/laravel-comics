@@ -16,13 +16,13 @@
         {{-- JS --}}
         <script src=" {{ asset('js/app.js') }} " charset="utf-8"></script>
     </head>
-    <body>
-        @extends('layouts.header')
 
+    @include('layouts.header')
+    <body>
         <main>
             @yield('content')
         </main>
-
-        @extends('layouts.footer')
     </body>
+    @include('layouts.footer')
+
 </html>

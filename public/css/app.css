@@ -16205,3 +16205,72 @@ header nav input::placeholder {
   text-transform: capitalize;
   color: #464646;
 }
+
+main #hero {
+  background-image: url("../images/jumbotron.jpg");
+  background-size: cover;
+  padding-bottom: 30%;
+}
+main #current-series {
+  background-color: #1c1c1c;
+  padding: 40px 0;
+}
+main #current-series .tiles-container {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+main #current-series .tiles-container h2 {
+  position: absolute;
+  color: #fff;
+  background-color: #0282f9;
+  top: -40px;
+  transform: translateY(-50%);
+  left: 0;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  padding: 10px 30px;
+}
+main #current-series .tiles-container .tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: calc(100% / 6);
+  height: 250px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+main #current-series .tiles-container .tile img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  height: 180px;
+  width: 100%;
+}
+main #current-series .tiles-container .tile a {
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+}
+main #current-series .tiles-container .tile a:hover {
+  text-decoration: none;
+}
+main #current-series .more-comics {
+  display: inline-block;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #0282f9;
+  padding: 5px 60px;
+}
+main #current-series .more-comics:hover {
+  text-decoration: none;
+}
