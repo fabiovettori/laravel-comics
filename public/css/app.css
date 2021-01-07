@@ -16274,3 +16274,26 @@ main #current-series .more-comics {
 main #current-series .more-comics:hover {
   text-decoration: none;
 }
+main .merchandise {
+  background-color: #0282f9;
+  padding: 50px 0;
+}
+main .merchandise a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main .merchandise a:hover {
+  text-decoration: none;
+}
+main .merchandise a img, main .merchandise a svg {
+  max-height: 70px;
+}
+main .merchandise a span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  margin-left: 15px;
+  white-space: nowrap;
+}

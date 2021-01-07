@@ -29,4 +29,37 @@
             </div>
         </div>
     </section>
+
+    <section class="merchandise">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-between">
+                    <a href="#">
+                        <img src=" {{ asset('images/buy-comics-digital-comics.png') }} " alt="digital comics">
+                        <span class="text-uppercase">digital comics</span>
+                    </a>
+
+                    <a href="#">
+                        <img src=" {{ asset('images/buy-comics-merchandise.png') }} " alt="comics merchandise">
+                        <span class="text-uppercase">dc merchandise</span>
+                    </a>
+
+                    <a href="#">
+                        <img src=" {{ asset('images/buy-comics-subscriptions.png') }} " alt="comics subscriptions">
+                        <span class="text-uppercase">subscription</span>
+                    </a>
+
+                    <a href="#">
+                        <img src=" {{ asset('images/buy-comics-shop-locator.png') }} " alt="comics shop locator">
+                        <span class="text-uppercase">comic shop locator</span>
+                    </a>
+
+                    <a href="#">
+                        <img src=" {{ asset('images/buy-dc-power-visa.svg') }} " alt="comics power visa">
+                        <span class="text-uppercase">dc power visa</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection

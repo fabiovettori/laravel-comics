@@ -68,4 +68,29 @@ main {
             }
         }
     }
+
+    .merchandise {
+        background-color: $merchandise_bg_color;
+        padding: 50px 0;
+
+        a {
+            @include flex(row, center, center);
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            img, svg {
+                max-height: 70px;
+            }
+
+            span {
+                font-size: 12px;
+                font-weight: 600;
+                color: $merchandise_font_color;
+                margin-left: 15px;
+                white-space: nowrap;
+            }
+        }
+    }
 }
