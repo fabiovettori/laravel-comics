@@ -16206,10 +16206,34 @@ header nav input::placeholder {
   color: #464646;
 }
 
-footer #footer-top {
+footer {
   background-image: url("../images/footer-bg.jpg");
-  background-size: contain;
+  background-size: cover;
+}
+footer #footer-top {
+  background-image: url("../images/dc-logo-bg.png");
+  background-repeat: no-repeat;
+  background-position: 80% center;
+  background-size: 35%;
   padding: 30px 0;
+}
+footer #footer-top li:first-of-type {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+footer #footer-top a, footer #footer-top p {
+  font-size: 13px;
+  text-transform: capitalize;
+  color: #959595;
+}
+footer #footer-top a:hover {
+  text-decoration: none;
+  color: #0282f9;
+}
+footer #footer-top p a {
+  color: #0282f9;
 }
 footer #footer-bottom {
   display: flex;
