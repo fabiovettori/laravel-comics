@@ -1,9 +1,11 @@
 require('./bootstrap');
 
 var $ = require('jquery');
+var dayjs = require('dayjs');
 
 $(document).ready(function(){
 
+    // gestisce la visualizzazione dell'header in funzione della direzione dello scroll dell'utente
     const headerHeight = $('header').outerHeight();
     $('header').css({top: -headerHeight + 'px'});
 
@@ -28,4 +30,10 @@ $(document).ready(function(){
 
         lastScrollTop = userScroll <= 0 ? 0 : userScroll;
     });
+
+    // gesione del formato delle date nella scheda comic del singolo fumetto
+    const dateInputFormat = $('#sale_date').text();
+    const dateOutputFormat = dayjs(dateInputFormat).format('MMM D YYYY');
+    $('#sale_date').text(dateOutputFormat);
+
 });

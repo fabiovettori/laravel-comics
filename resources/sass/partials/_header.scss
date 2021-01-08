@@ -65,6 +65,10 @@ header {
             &:hover:after {
                 height: 5px;
             }
+
+            &.active:after {
+                height: 5px;
+            }
         }
 
         a {
@@ -95,6 +99,10 @@ header {
                 font-weight: 700;
                 text-transform: capitalize;
                 color: $nav_links_font-color;
+            }
+
+            &:focus {
+                outline: none;
             }
         }
     }

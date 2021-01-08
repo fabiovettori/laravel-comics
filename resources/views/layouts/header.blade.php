@@ -23,14 +23,16 @@
         <div class="container-lg">
             <div class="row">
                 <div class="col-lg-2 d-flex justify-content-center">
-                    <img src=" {{ asset('images/dc-logo.png') }} " alt="dc comics logo">
+                    <a href="  {{ route('home') }} ">
+                        <img src=" {{ asset('images/dc-logo.png') }} " alt="dc comics logo">
+                    </a>
                 </div>
 
                 <ul class="col-lg-8 d-flex m-0 list-unstyled justify-content-around align-center">
                     <li>
                         <a href="#">characters</a>
                     </li>
-                    <li>
+                    <li class=" {{ Request::route()->getName() == 'comic-single-page' ? 'active' : ''}} ">
                         <a href="#">comics</a>
                     </li>
                     <li>

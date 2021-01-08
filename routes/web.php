@@ -27,8 +27,17 @@ Route::get('/', function () {
 
 
 // comics-single-page
-Route::get('/comics', function(){
+Route::get('/comics/comic_id_{id}', function($id){
 
-    return view('comics');
-    
+    $comics = config('comics');
+
+    $comic = $comics[$id];
+
+    $data = [
+        'comics' => $comics,
+        'comic' => $comic
+    ];
+
+    return view('layouts.comics', $data);
+
 })->name('comic-single-page');

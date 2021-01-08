@@ -11,12 +11,12 @@
             <div class="row">
                 <div class="col-lg-12 tiles-container">
                     <h2 class="text-uppercase">current series</h2>
-                    @foreach ($comics as $comic)
+                    @foreach ($comics as $key => $comic)
                         <div class="tile">
-                            <a href="#">
+                            <a href=" {{ route('comic-single-page', ['id' => $key]) }} ">
                                 <img src=" {{ $comic['thumb'] }}" alt=" {{ $comic['title'] }} ">
                             </a>
-                            <a class="text-uppercase pt-3" href="#">{{ $comic['series'] }}</a>
+                            <a class="text-uppercase pt-3" href=" {{ route('comic-single-page', ['id' => $key]) }} ">{{ $comic['series'] }}</a>
                         </div>
                     @endforeach
                 </div>

@@ -16106,6 +16106,10 @@ readers do not read off random characters that represent icons */
   box-sizing: border-box;
 }
 
+body {
+  position: relative;
+}
+
 header {
   position: -webkit-sticky;
   position: sticky;
@@ -16175,6 +16179,9 @@ header nav li:after {
 header nav li:hover:after {
   height: 5px;
 }
+header nav li.active:after {
+  height: 5px;
+}
 header nav a {
   display: block;
   color: #464646;
@@ -16213,6 +16220,9 @@ header nav input::placeholder {
   font-weight: 700;
   text-transform: capitalize;
   color: #464646;
+}
+header nav input:focus {
+  outline: none;
 }
 
 footer {
@@ -16376,4 +16386,163 @@ main .merchandise a span {
   color: #fff;
   margin-left: 15px;
   white-space: nowrap;
+}
+
+main #comic-description {
+  font-family: "Open Sans", sans-serif;
+}
+main #comic-description .cover {
+  padding-bottom: 80px;
+  background-color: #0282f9;
+  margin-bottom: 50px;
+}
+main #comic-description .cover .wrapper {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+main #comic-description .cover .wrapper img {
+  border: 1px solid #fff;
+  position: absolute;
+  bottom: -60px;
+}
+main #comic-description h2 {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  color: #003f5e;
+}
+main #comic-description .comic-status {
+  color: #fff;
+  background-color: #55ba59;
+  border-bottom: 1px solid #357739;
+  font-weight: 600;
+}
+main #comic-description .comic-status > div:last-of-type {
+  border-left: 1px solid #357739;
+}
+main #comic-description .comic-status > div:last-of-type a {
+  color: #fff;
+}
+main #comic-description .comic-status > div:last-of-type a:hover {
+  text-decoration: none;
+}
+main #comic-description .comic-status .avaiabiable {
+  color: #bafd9c;
+}
+main #comic-description p {
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #555;
+}
+main #comic-details-info {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f6f6f6;
+  padding-bottom: 100px;
+}
+main #comic-details-info h3 {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #003f5e;
+}
+main #comic-details-info .grid {
+  font-size: 14px;
+  line-height: 16px;
+  padding: 15px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #e3e3e3;
+}
+main #comic-details-info .grid .highlight {
+  color: #00a9d9;
+  font-weight: 700;
+}
+main #comic-details-info .grid .highlight:nth-of-type(even) {
+  padding: 10px 0;
+}
+main #comic-details-info .grid h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #003f5e;
+}
+main #comic-details-info .grid h4, main #comic-details-info .grid p {
+  margin: 0;
+}
+main #comic-details-info .grid .key {
+  flex-basis: 30%;
+}
+main #comic-details-info .grid .value {
+  flex-basis: 70%;
+}
+main #filter-merchandise {
+  background-color: #f6f6f6;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+}
+main #filter-merchandise a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Open Sans Condensed", sans-serif;
+  border-left: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 15px;
+  color: #9f9f9f;
+  flex-grow: 1;
+}
+main #filter-merchandise a:hover {
+  color: #003f5e;
+  text-decoration: none;
+  background-color: #e3e3e3;
+}
+main #filter-merchandise a:hover img {
+  filter: invert(66%) sepia(0%) saturate(1%) hue-rotate(268deg) brightness(90%) contrast(91%);
+}
+main #filter-merchandise a img {
+  height: 40px;
+  filter: invert(66%) sepia(0%) saturate(1%) hue-rotate(268deg) brightness(220%) contrast(91%);
+}
+main #social-icons {
+  position: fixed;
+  top: 20%;
+  right: 0;
+}
+main #social-icons > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 65px;
+}
+main #social-icons a:hover {
+  text-decoration: none;
+}
+main #social-icons a span {
+  text-align: center;
+  display: block;
+  font-size: 22px;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  transition: width 0.3s ease;
+}
+main #social-icons a span:hover {
+  width: 65px;
+}
+main #social-icons a span.fa-facebook-f {
+  background-color: #3b5998;
+}
+main #social-icons a span.fa-twitter {
+  background-color: #1da1f2;
+}
+main #social-icons a span.fa-pinterest-p {
+  background-color: #cb2027;
+}
+main #social-icons a span.fa-plus {
+  background-color: #ff6550;
 }
